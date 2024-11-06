@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light w-100 z-3">
+    <div class="container">
+        <img class="profile-logo" src="assets/images/profile-logo.avif" alt="">
+      <a class="navbar-brand text-white px-3 fw-bold" href="#">Welcome</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item" [ngClass]="{ 'active-nav-item': activeSection === 'about' }">
+            <a class="nav-link text-white px-3" href="#about" (click)="setActive('about')">About</a>
+          </li>
+          <li class="nav-item" [ngClass]="{ 'active-nav-item': activeSection === 'projects' }">
+            <a class="nav-link text-white px-3" href="#projects" (click)="setActive('projects')">Projects</a>
+          </li>
+          <li class="nav-item" [ngClass]="{ 'active-nav-item': activeSection === 'resume' }">
+            <a class="nav-link text-white px-3" href="#resume" (click)="setActive('resume')">Resume</a>
+          </li>
+          <li class="nav-item" [ngClass]="{ 'active-nav-item': activeSection === 'contact' }">
+            <a class="nav-link text-white px-3" href="#contact" (click)="setActive('contact')">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
